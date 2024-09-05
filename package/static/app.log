@@ -1,56 +1,311 @@
-2024/09/04 19:33:17 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:17 main.go:23: Server Start Awaiting Signal
-2024/09/04 19:33:17 http.go:19: Started main/serveHTTP
-2024/09/04 19:33:17 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:18 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:18 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:19 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:19 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:20 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:20 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:21 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:21 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:22 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:22 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:23 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:23 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:24 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:24 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:25 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:25 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:26 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:26 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:27 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:27 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:28 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:28 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:29 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:29 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:30 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:30 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:31 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:31 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:32 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:32 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:33 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:33 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:34 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:34 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:35 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:35 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:36 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:36 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:37 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:37 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:38 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:38 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:39 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:39 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:40 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:40 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:41 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:41 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:42 stream.go:35: H264_AAC Stream Try Connect
-2024/09/04 19:33:42 stream.go:38: dial tcp 127.0.0.1:5544: connect: connection refused
-2024/09/04 19:33:42 main.go:20: interrupt
-2024/09/04 19:33:42 main.go:25: Exiting
+2024/09/05 21:00:04 main.go:23: Server Start Awaiting Signal
+2024/09/05 21:00:04 stream.go:35: H264_AAC Stream Try Connect
+2024/09/05 21:00:18 http.go:64: suuid: H264_AAC
+2024/09/05 21:00:18 config.go:152: [main.config] element(HTTPPort): :8083 
+2024/09/05 21:00:18 config.go:91: [main.http -> main.config[RunIFNotRun]]
+2024/09/05 21:00:18 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:18 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:18 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:18 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:18 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:18 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:18 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:18 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:19 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:19 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:19 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:19 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:19 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:19 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:19 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:19 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:20 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:20 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:20 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:20 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:20 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:20 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:20 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:20 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:20 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:20 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:20 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:20 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:21 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:21 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:21 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:21 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:21 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:21 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:21 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:21 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:21 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:21 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:21 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:21 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:22 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:22 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:22 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:22 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:22 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:22 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:22 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:22 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:22 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:22 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:22 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:22 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:23 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:23 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:23 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:23 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:23 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:23 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:23 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:23 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:23 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:23 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:23 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:23 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:24 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:24 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:24 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:24 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:24 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:24 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:24 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:24 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:24 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:24 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:24 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:24 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:25 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:25 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:25 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:25 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:25 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:25 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:25 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:25 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:25 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:25 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:25 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:25 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:25 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:25 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:25 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:25 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:26 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:26 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:26 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:26 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:26 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:26 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:26 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:26 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:26 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:26 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:26 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:26 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:26 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:26 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:26 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:26 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:27 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:27 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:27 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:27 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:27 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:27 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:27 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:27 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:27 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:27 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:27 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:27 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:27 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:27 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:27 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:27 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:28 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:28 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:28 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:28 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:28 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:28 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:28 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:28 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:28 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:28 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:28 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:28 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:28 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:28 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:28 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:28 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:29 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:29 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:29 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:29 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:29 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:29 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:29 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:29 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:29 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:29 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:29 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:29 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:29 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:29 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:29 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:29 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:30 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:30 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:30 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:30 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:30 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:30 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:30 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:30 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:30 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:30 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:30 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:30 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:30 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:30 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:30 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:30 config.go:74: [4]: segmentDuration 5.067s
+2024/09/05 21:00:30 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.945s 
+2024/09/05 21:00:30 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: -66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m19.412s 
+2024/09/05 21:00:30 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m21.945s 
+2024/09/05 21:00:30 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:31 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:31 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:31 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:31 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:31 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:31 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:31 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:31 config.go:74: [4]: segmentDuration 5.067s
+2024/09/05 21:00:31 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.945s 
+2024/09/05 21:00:31 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: -66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m19.412s 
+2024/09/05 21:00:31 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m21.945s 
+2024/09/05 21:00:31 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:31 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:31 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:31 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:31 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:31 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:31 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:31 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:31 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:32 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:32 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:32 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:32 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:32 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:32 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:32 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:32 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:32 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:32 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:32 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:32 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:32 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:32 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:32 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:32 config.go:74: [4]: segmentDuration 5.067s
+2024/09/05 21:00:32 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.945s 
+2024/09/05 21:00:32 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: -66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m19.412s 
+2024/09/05 21:00:32 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m21.945s 
+2024/09/05 21:00:32 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:33 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:33 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:33 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:33 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:33 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:33 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:33 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:33 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:33 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:33 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:33 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:33 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:33 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:33 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:33 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:33 config.go:74: [4]: segmentDuration 5.067s
+2024/09/05 21:00:33 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.945s 
+2024/09/05 21:00:33 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: -66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m19.412s 
+2024/09/05 21:00:33 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m21.945s 
+2024/09/05 21:00:33 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:34 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:34 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:34 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:34 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:34 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:34 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:34 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:34 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:34 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:34 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:34 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:34 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:34 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:34 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:34 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:34 config.go:74: [4]: segmentDuration 5.067s
+2024/09/05 21:00:34 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.945s 
+2024/09/05 21:00:34 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: -66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m19.412s 
+2024/09/05 21:00:34 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m21.945s 
+2024/09/05 21:00:34 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:35 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:35 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:35 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:35 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:35 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:35 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:35 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:35 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:35 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:35 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:35 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:35 config.go:74: [4]: segmentDuration 5.067s
+2024/09/05 21:00:35 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.945s 
+2024/09/05 21:00:35 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: -66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m19.412s 
+2024/09/05 21:00:35 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m21.945s 
+2024/09/05 21:00:35 config.go:74: [5]: segmentDuration 5.066s
+2024/09/05 21:00:35 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m22.012s 
+2024/09/05 21:00:35 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m24.478s 
+2024/09/05 21:00:35 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m27.012s 
+2024/09/05 21:00:35 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:35 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:35 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:35 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:35 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:36 config.go:238: [config[StreamHLSm3u8]] Получение hls-list m3u8
+2024/09/05 21:00:36 config.go:250: config[StreamHLSm3u8]: hls segment buffer
+2024/09/05 21:00:36 config.go:72: [StreamHLSm3u8] -> config[readSegments]:
+2024/09/05 21:00:36 config.go:74: [1]: segmentDuration 5.067s
+2024/09/05 21:00:36 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: false, Duration: 0s, Idx: 0, CompositionTime 1ms, Time: 6h36m56.545s 
+2024/09/05 21:00:36 config.go:76: [pck := range val.data](idx av.data)300: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m1.578s 
+2024/09/05 21:00:36 config.go:77: [pck := range val.data](idx av.data)299: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.478s 
+2024/09/05 21:00:36 config.go:74: [2]: segmentDuration 5.2s
+2024/09/05 21:00:36 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m6.545s 
+2024/09/05 21:00:36 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m9.112s 
+2024/09/05 21:00:36 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.678s 
+2024/09/05 21:00:36 config.go:74: [3]: segmentDuration 5.2s
+2024/09/05 21:00:36 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m11.745s 
+2024/09/05 21:00:36 config.go:76: [pck := range val.data](idx av.data)156: config[printAVPacketsData]: IsKeyFrame: false, Duration: 100ms, Idx: 0, CompositionTime 1ms, Time: 6h37m14.345s 
+2024/09/05 21:00:36 config.go:77: [pck := range val.data](idx av.data)155: config[printAVPacketsData]: IsKeyFrame: false, Duration: -33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.878s 
+2024/09/05 21:00:36 config.go:74: [4]: segmentDuration 5.067s
+2024/09/05 21:00:36 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m16.945s 
+2024/09/05 21:00:36 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: -66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m19.412s 
+2024/09/05 21:00:36 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m21.945s 
+2024/09/05 21:00:36 config.go:74: [5]: segmentDuration 5.066s
+2024/09/05 21:00:36 config.go:75: [pck := range val.data](idx av.data)0: config[printAVPacketsData]: IsKeyFrame: true, Duration: 66ms, Idx: 0, CompositionTime 1ms, Time: 6h37m22.012s 
+2024/09/05 21:00:36 config.go:76: [pck := range val.data](idx av.data)152: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m24.478s 
+2024/09/05 21:00:36 config.go:77: [pck := range val.data](idx av.data)151: config[printAVPacketsData]: IsKeyFrame: false, Duration: 33ms, Idx: 0, CompositionTime 1ms, Time: 6h37m27.012s 
+2024/09/05 21:00:36 http.go:83: Play list not ready wait or try update page
+2024/09/05 21:00:37 main.go:20: interrupt
+2024/09/05 21:00:37 main.go:25: Exiting

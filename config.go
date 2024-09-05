@@ -68,9 +68,27 @@ type viewer struct {
 	c chan av.Packet
 }
 
+func readSegments(segments map[int]Segment) {
+	log.Println("[StreamHLSm3u8] -> config[readSegments]:")
+	for i, val := range segments {
+		log.Printf("[%d]: segmentDuration %s\n", i, val.dur)
+		log.Printf("[pck := range val.data](idx av.data)%d: %s", 0, printAVPacketsData(*val.data[0]))
+		log.Printf("[pck := range val.data](idx av.data)%d: %s", len(val.data)-1/2, printAVPacketsData(*val.data[(len(val.data)-1)/2]))
+		log.Printf("[pck := range val.data](idx av.data)%d: %s", len(val.data)-1, printAVPacketsData(*val.data[len(val.data)-1]))
+
+	}
+}
+
+func printAVPacketsData(packet av.Packet) string {
+	return fmt.Sprintf(
+		"config[printAVPacketsData]: IsKeyFrame: %t, Duration: %s, Idx: %d, CompositionTime %s, Time: %s \n",
+		packet.IsKeyFrame, packet.Duration, packet.Idx, packet.CompositionTime, packet.Time,
+	)
+}
+
 func (element *ConfigST) RunIFNotRun(uuid string) {
 	element.mutex.Lock()
-	fmt.Println("[main.http -> main.config[RunIFNotRun]]")
+	log.Println("[main.http -> main.config[RunIFNotRun]]")
 	defer element.mutex.Unlock()
 	if tmp, ok := element.Streams[uuid]; ok {
 		if tmp.OnDemand && !tmp.RunLock {
@@ -225,10 +243,12 @@ func (obj *ConfigST) StreamHLSm3u8(uuid string) (string, int, error) {
 		//TODO fix  it
 		out += "#EXTM3U\r\n#EXT-X-TARGETDURATION:4\r\n#EXT-X-VERSION:4\r\n#EXT-X-MEDIA-SEQUENCE:" + strconv.Itoa(tmp.hlsSegmentNumber) + "\r\n"
 		var keys []int
+		// segmentBuffer --набор байтов
 		for k := range tmp.hlsSegmentBuffer {
 			keys = append(keys, k)
 		}
-		log.Printf("config[StreamHLSm3u8]: hls segment buffer: %s", tmp.hlsSegmentBuffer)
+		log.Println("config[StreamHLSm3u8]: hls segment buffer")
+		readSegments(tmp.hlsSegmentBuffer)
 
 		sort.Ints(keys)
 		var count int
