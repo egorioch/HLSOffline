@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/deepch/RTSPtoWSMP4f/package/logger"
+	"HLSOffline/package/logger"
 	"log"
 	"os"
 	"os/signal"

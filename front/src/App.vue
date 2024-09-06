@@ -23,13 +23,12 @@ import Hls from "hls.js";
 export default {
   data() {
     return {
-      suuid: "H264_AAC", // Значение будет установлено через props или API-запрос
-      port: "8083", // Значение будет установлено через props или API-запрос
-      suuidMap: ["H264_AAC"], // Значение будет установлено через API-запрос
+      suuid: "H264_AAC",
+      port: "8083",
+      suuidMap: ["H264_AAC"],
     };
   },
   mounted() {
-
     const video = document.getElementById("livestream");
     const videoSrc = `http://localhost:8083/play/hls/${this.suuid}/index.m3u8`;
 

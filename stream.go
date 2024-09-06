@@ -1,13 +1,12 @@
 package main
 
 import (
+	"HLSOffline/package/av"
+	"HLSOffline/package/format/rtspv2"
 	"errors"
 	"fmt"
 	"log"
 	"time"
-
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/format/rtspv2"
 )
 
 var (

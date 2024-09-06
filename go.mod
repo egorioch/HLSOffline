@@ -1,4 +1,4 @@
-module github.com/deepch/RTSPtoWSMP4f
+module HLSOffline
 
 go 1.15
 

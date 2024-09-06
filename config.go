@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/deepch/vdk/av"
+	"HLSOffline/package/av"
 )
 
 var (
