@@ -5,8 +5,7 @@
   "streams": {
     "H264_AAC": {
       "on_demand": false,
-      "url": "rtsp://admin:Qwer123@192.168.9.254:554"
+      "url": "rtsp://admin:Qwer123@192.168.9.218/cam/realmonitor?channel=1\u0026subtype=0"
     }
-
   }
 }

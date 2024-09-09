@@ -1,6 +1,6 @@
 package mjpeg
 
-import "github.com/deepch/vdk/av"
+import "HLSOffline/package/av"
 
 type CodecData struct {
 }

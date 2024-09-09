@@ -30,7 +30,7 @@ export default {
   },
   mounted() {
     const video = document.getElementById("livestream");
-    const videoSrc = `http://localhost:8083/play/hls/${this.suuid}/index.m3u8`;
+    const videoSrc = `http://localhost:8083/play/hls`;
 
     if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = videoSrc;

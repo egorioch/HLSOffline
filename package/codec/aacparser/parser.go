@@ -6,8 +6,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/utils/bits"
+	"HLSOffline/package/av"
+	"HLSOffline/package/utils/bits"
 )
 
 // copied from libavcodec/mpeg4audio.h

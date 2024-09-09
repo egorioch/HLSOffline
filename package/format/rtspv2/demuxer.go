@@ -1,11 +1,11 @@
 package rtspv2
 
 import (
+	"HLSOffline/package/av"
+	"HLSOffline/package/codec/aacparser"
+	"HLSOffline/package/codec/h264parser"
+	"HLSOffline/package/codec/h265parser"
 	"encoding/binary"
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/codec/aacparser"
-	"github.com/deepch/vdk/codec/h264parser"
-	"github.com/deepch/vdk/codec/h265parser"
 	"math"
 	"time"
 )

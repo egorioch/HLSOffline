@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/deepch/vdk/av"
+	"HLSOffline/package/av"
 )
 
 type CodecData struct {

@@ -3,65 +3,72 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/gin-contrib/cors"
 	"log"
 	"net/http"
-	"sort"
+	"strings"
 	"time"
 
-	"github.com/deepch/vdk/format/ts"
+	"HLSOffline/package/format/ts"
 
 	"github.com/gin-gonic/gin"
 )
 
+func corsMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
+		// Handle preflight requests
+		if r.Method == http.MethodOptions {
+			w.WriteHeader(http.StatusOK)
+			return
+		}
+		next.ServeHTTP(w, r)
+	})
+}
+
+// ServeHTTP replaces gin-based router
 func serveHTTP() {
-	router := gin.Default()
-	gin.SetMode(gin.DebugMode)
+	http.HandleFunc("/play/hls/", NetPlayHls)
+	http.HandleFunc("/play/hls/segment/", NetPlayHLSTS)
+	//http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("web/static"))))
 
-	// Добавляем CORS middleware
-	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"*"}, // Укажите допустимые источники
-		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
-		AllowHeaders:     []string{"Origin", "Content-Type", "Accept"},
-		ExposeHeaders:    []string{"Content-Length"},
-		AllowCredentials: true,
-		MaxAge:           12 * time.Hour,
-	}))
+	// Wrap with CORS middleware
+	log.Fatal(http.ListenAndServe("localhost:8083", corsMiddleware(http.DefaultServeMux)))
+}
 
-	router.LoadHTMLGlob("web/templates/*")
-	router.GET("/", func(c *gin.Context) {
-		fi, all := Config.list()
-		sort.Strings(all)
-		fmt.Printf("suuid: %s\n", fi)
-		c.HTML(http.StatusOK, "index.tmpl", gin.H{
-			"port":     Config.Server.HTTPPort,
-			"suuid":    fi,
-			"suuidMap": all,
-			"version":  time.Now().String(),
-		})
-	})
-	router.GET("/player/:suuid", func(c *gin.Context) {
-		_, all := Config.list()
-		sort.Strings(all)
-		c.HTML(http.StatusOK, "index.tmpl", gin.H{
-			"port":     Config.Server.HTTPPort,
-			"suuid":    c.Param("suuid"),
-			"suuidMap": all,
-			"version":  time.Now().String(),
-		})
-	})
-	router.GET("/play/hls/:suuid/index.m3u8", PlayHLS)
-	router.GET("/play/hls/:suuid/segment/:seq/file.ts", PlayHLSTS)
-	router.StaticFS("/static", http.Dir("web/static"))
-	err := router.Run(Config.Server.HTTPPort)
-	if err != nil {
-		log.Fatalln(err)
+func NetPlayHls(w http.ResponseWriter, r *http.Request) {
+	//parts := strings.Split(r.URL.Path, "/")
+	suuid := "H264_AAC"
+
+	fmt.Printf("suuid: %s\n", suuid)
+	if !Config.ext(suuid) {
+		return
+	}
+	Config.RunIFNotRun(suuid)
+	for i := 0; i < 40; i++ {
+		index, seq, err := Config.StreamHLSm3u8(suuid)
+		fmt.Printf("[Config.StreamHLSm3u8]index: %s, seq: %s \n", index, seq)
+		if err != nil {
+			log.Println(err)
+			return
+		}
+		if seq >= 6 {
+			_, err := w.Write([]byte(index))
+			if err != nil {
+				log.Println(err)
+				return
+			}
+			return
+		}
+		log.Println("Play list not ready wait or try update page")
+		time.Sleep(1 * time.Second)
 	}
 }
 
 func PlayHLS(c *gin.Context) {
 	suuid := c.Param("suuid")
-	log.Printf("suuid: %s", suuid)
+	fmt.Printf("suuid: %s\n", suuid)
 	if !Config.ext(suuid) {
 		return
 	}
@@ -82,6 +89,58 @@ func PlayHLS(c *gin.Context) {
 		}
 		log.Println("Play list not ready wait or try update page")
 		time.Sleep(1 * time.Second)
+	}
+}
+
+// PlayHLSTS send client ts segment
+func NetPlayHLSTS(w http.ResponseWriter, r *http.Request) {
+	parts := strings.Split(r.URL.Path, "/")
+	suuid := parts[3]
+	seg := parts[5]
+	fmt.Printf("[NetPlayHLSTS]suuid: %s; seg: %s\n", suuid, seg)
+
+	if !Config.ext(suuid) {
+		return
+	}
+	codecs := Config.coGe(suuid)
+	if codecs == nil {
+		return
+	}
+	outfile := bytes.NewBuffer([]byte{})
+	Muxer := ts.NewMuxer(outfile)
+	err := Muxer.WriteHeader(codecs)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	Muxer.PaddingToMakeCounterCont = true
+	seqData, err := Config.StreamHLSTS(suuid, stringToInt(seg))
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	if len(seqData) == 0 {
+		log.Println(err)
+		return
+	}
+	for _, v := range seqData {
+		v.CompositionTime = 1
+		err = Muxer.WritePacket(*v)
+		if err != nil {
+			log.Println(err)
+			return
+		}
+	}
+	err = Muxer.WriteTrailer()
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	_, err = w.Write(outfile.Bytes())
+	fmt.Printf("outfile.Bytes: %s\n", outfile.Bytes())
+	if err != nil {
+		log.Println(err)
+		return
 	}
 }
 

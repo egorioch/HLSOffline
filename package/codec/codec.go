@@ -3,8 +3,8 @@ package codec
 import (
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/codec/fake"
+	"HLSOffline/package/av"
+	"HLSOffline/package/codec/fake"
 )
 
 type OpusCodecData struct {

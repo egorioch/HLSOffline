@@ -7,9 +7,9 @@ import (
 
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/utils/bits"
-	"github.com/deepch/vdk/utils/bits/pio"
+	"HLSOffline/package/av"
+	"HLSOffline/package/utils/bits"
+	"HLSOffline/package/utils/bits/pio"
 )
 
 const (

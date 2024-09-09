@@ -1,7 +1,7 @@
 package fake
 
 import (
-	"github.com/deepch/vdk/av"
+	"HLSOffline/package/av"
 )
 
 type CodecData struct {
