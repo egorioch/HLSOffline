@@ -72,4 +72,6 @@ Examples of working with video on golang
 - [RTSPtoHLS](https://github.com/deepch/RTSPtoHLS)
 - [RTSPtoHLSLL](https://github.com/deepch/RTSPtoHLSLL)
 
-[![paypal.me/AndreySemochkin](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/AndreySemochkin) - You can make one-time donations via PayPal. I'll probably buy a ~~coffee~~ tea. :tea:
+P.S.
+Это разработка https://github.com/deepch/RTSPtoHLS, для оффлайна нужен его код с единого репозитория разработки vdk
+Также нужен ещё https://github.com/google/uuid (для package/format/rtspv2)

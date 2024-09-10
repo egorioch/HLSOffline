@@ -9,8 +9,6 @@ import (
 	"time"
 
 	"HLSOffline/package/format/ts"
-
-	"github.com/gin-gonic/gin"
 )
 
 func corsMiddleware(next http.Handler) http.Handler {
@@ -30,7 +28,7 @@ func corsMiddleware(next http.Handler) http.Handler {
 // ServeHTTP replaces gin-based router
 func serveHTTP() {
 	http.HandleFunc("/play/hls/", NetPlayHls)
-	http.HandleFunc("/play/hls/segment/", NetPlayHLSTS)
+	//http.HandleFunc("/play/hls/segment/", NetPlayHLSTS)
 	//http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("web/static"))))
 
 	// Wrap with CORS middleware
@@ -38,8 +36,17 @@ func serveHTTP() {
 }
 
 func NetPlayHls(w http.ResponseWriter, r *http.Request) {
-	//parts := strings.Split(r.URL.Path, "/")
-	suuid := "H264_AAC"
+	fmt.Printf("URL: %s\n", r.URL.Path)
+
+	if strings.Contains(r.URL.Path, "/segment/") {
+		fmt.Printf("CONTAINS SEGMENT")
+		NetPlayHLSTS(w, r)
+		return
+	}
+
+	parts := strings.Split(r.URL.Path, "/")
+	suuid := parts[3]
+	w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 
 	fmt.Printf("suuid: %s\n", suuid)
 	if !Config.ext(suuid) {
@@ -55,32 +62,6 @@ func NetPlayHls(w http.ResponseWriter, r *http.Request) {
 		}
 		if seq >= 6 {
 			_, err := w.Write([]byte(index))
-			if err != nil {
-				log.Println(err)
-				return
-			}
-			return
-		}
-		log.Println("Play list not ready wait or try update page")
-		time.Sleep(1 * time.Second)
-	}
-}
-
-func PlayHLS(c *gin.Context) {
-	suuid := c.Param("suuid")
-	fmt.Printf("suuid: %s\n", suuid)
-	if !Config.ext(suuid) {
-		return
-	}
-	Config.RunIFNotRun(suuid)
-	for i := 0; i < 40; i++ {
-		index, seq, err := Config.StreamHLSm3u8(suuid)
-		if err != nil {
-			log.Println(err)
-			return
-		}
-		if seq >= 6 {
-			_, err := c.Writer.Write([]byte(index))
 			if err != nil {
 				log.Println(err)
 				return
@@ -136,55 +117,10 @@ func NetPlayHLSTS(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 		return
 	}
-	_, err = w.Write(outfile.Bytes())
-	fmt.Printf("outfile.Bytes: %s\n", outfile.Bytes())
-	if err != nil {
-		log.Println(err)
-		return
-	}
-}
 
-// PlayHLSTS send client ts segment
-func PlayHLSTS(c *gin.Context) {
-	suuid := c.Param("suuid")
-	if !Config.ext(suuid) {
-		return
-	}
-	codecs := Config.coGe(c.Param("suuid"))
-	if codecs == nil {
-		return
-	}
-	outfile := bytes.NewBuffer([]byte{})
-	Muxer := ts.NewMuxer(outfile)
-	err := Muxer.WriteHeader(codecs)
-	if err != nil {
-		log.Println(err)
-		return
-	}
-	Muxer.PaddingToMakeCounterCont = true
-	seqData, err := Config.StreamHLSTS(c.Param("suuid"), stringToInt(c.Param("seq")))
-	if err != nil {
-		log.Println(err)
-		return
-	}
-	if len(seqData) == 0 {
-		log.Println(err)
-		return
-	}
-	for _, v := range seqData {
-		v.CompositionTime = 1
-		err = Muxer.WritePacket(*v)
-		if err != nil {
-			log.Println(err)
-			return
-		}
-	}
-	err = Muxer.WriteTrailer()
-	if err != nil {
-		log.Println(err)
-		return
-	}
-	_, err = c.Writer.Write(outfile.Bytes())
+	w.Header().Set("Content-Type", "application/octet-stream")
+	_, err = w.Write(outfile.Bytes())
+
 	if err != nil {
 		log.Println(err)
 		return

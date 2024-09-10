@@ -17,7 +17,7 @@ var (
 
 func serveStreams() {
 	for k, v := range Config.Streams {
-		fmt.Printf("streams: %s\n", Config)
+		fmt.Printf("streams: %+v: %+v\n", k, v)
 		if v.OnDemand {
 			log.Println("OnDemand not supported")
 			v.OnDemand = false
@@ -50,6 +50,7 @@ func RTSPWorker(name, url string, OnDemand bool) error {
 	var preKeyTS = time.Duration(0)
 	var Seq []*av.Packet
 	RTSPClient, err := rtspv2.Dial(rtspv2.RTSPClientOptions{URL: url, DisableAudio: false, DialTimeout: 3 * time.Second, ReadWriteTimeout: 3 * time.Second, Debug: false})
+	//log.Printf("[stream.go:RTSPWorker]RTSPClient: %+v\n", RTSPClient)
 	if err != nil {
 		return err
 	}
@@ -81,6 +82,7 @@ func RTSPWorker(name, url string, OnDemand bool) error {
 				keyTest.Reset(20 * time.Second)
 				if preKeyTS > 0 {
 					Config.StreamHLSAdd(name, Seq, packetAV.Time-preKeyTS)
+					log.Printf("[stream.go:RTSPWorker]PacketAV duration: %s", packetAV.Duration)
 					Seq = []*av.Packet{}
 				}
 				preKeyTS = packetAV.Time
