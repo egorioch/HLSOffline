@@ -3,9 +3,17 @@
     "http_port": ":8083"
   },
   "streams": {
-    "H264_AAC": {
+    "north_develop_room": {
       "on_demand": false,
-      "url": "rtsp://127.0.0.1:5544/test"
+      "url": "rtsp://admin:Qwer123@192.168.9.218/cam/realmonitor?channel=1\u0026subtype=0"
+    },
+    "south_develop_room": {
+      "on_demand": false,
+      "url": "rtsp://admin:Qwer123@192.168.9.219/cam/realmonitor?channel=1\u0026subtype=0"
+    },
+    "kitchen": {
+      "on_demand": false,
+      "url": "rtsp://admin:Qwer123@192.168.9.250/cam/realmonitor?channel=1\u0026subtype=0"
     }
   }
 }
